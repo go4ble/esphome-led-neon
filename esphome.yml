@@ -27,3 +27,21 @@ mdns:
 web_server:
 
 prometheus:
+
+output:
+  - platform: esp8266_pwm
+    pin: D1
+    id: pwm_1
+  - platform: esp8266_pwm
+    pin: D2
+    id: pwm_2
+
+light:
+  - platform: monochromatic
+    output: pwm_1
+    id: light_cat
+    name: LED Neon - Cat
+  - platform: monochromatic
+    output: pwm_2
+    id: light_sugoi
+    name: LED Neon - Sugoi!
