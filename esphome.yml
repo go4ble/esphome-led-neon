@@ -1,0 +1,29 @@
+esphome:
+  name: led-neon
+
+esp8266:
+  board: d1_mini
+
+# Enable logging
+#logger:
+
+api:
+  password: ""
+
+ota:
+  - platform: esphome
+    password: ""
+
+wifi:
+  domain: ""
+  ap:
+    ssid: "led-neon-ap"
+
+captive_portal:
+
+mdns:
+  disabled: true
+
+web_server:
+
+prometheus:
